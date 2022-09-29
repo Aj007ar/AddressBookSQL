@@ -29,3 +29,10 @@ select * from address_book_table
 insert into address_book_table(FirstName,LastName,Address,City,State,ZipCode,PhoneNumber,email)values('xxx','yyy','zzz','aaa','bbb','ccc','99999','eee')
 delete from address_book_table where FirstName = 'xxx'
 select * from address_book_table
+
+-----UC-6 Ability to Retrieve data based on city or state name-----
+select * from address_book_table where City = 'Yavatmal' or State = 'Maharashtra'
+select * from address_book_table where City = 'yyyy' or State ='UP'
+
+-----UC-7 Ability to retrieve count of contacts based on city and statename-----
+select count(*) as NoOfContacts,State,City from address_book_table group by City,State 

@@ -14,3 +14,7 @@ ZipCode varchar(255),
 PhoneNumber bigint,
 email varchar(25)
 ) 
+
+-----UC-3 Ability to insert values to address book table-----
+insert into address_book_table(FirstName,LastName,Address,City,State,ZipCode,PhoneNumber,email)values('Ajay','Rathod','Umarkhed','Yvatmal','Maharashtra','445207','9841578941','ajay@gmail.com'),('Preeti','Sharma','Nagar','Gurgaon','UP','ZIP8531','7841526987','preeti@gmail.com'),('Prasad','Ban','Dattchowk','Yavatmal','Maharashtra','600660','7744556699','Prasad@gmail.com'),('Dhanush','Raj','XXXX','yyyy','Banglore','600XXX','4477885599','raj@gmail.com')
+select * from address_book_table
